@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import type { IJobsItemProps } from "../JobsItem/JobsItem";
-import { Loader } from "../../../../../../components/Loader/Loader";
+import { Loader } from "../../../../components/Loader/Loader";
 import { JobsItem } from "../JobsItem/JobsItem";
 
 interface IJobsListProps {

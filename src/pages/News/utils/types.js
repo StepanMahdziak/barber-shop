@@ -2,9 +2,10 @@ export interface IItemProps {
     title : String;
     img : String;
     desc: String;
+    id : String;
 }
 
-export interface IInitialState {
+export interface INewsInitialState {
     news : [IItemProps],
     oneNews : IItemProps
 }

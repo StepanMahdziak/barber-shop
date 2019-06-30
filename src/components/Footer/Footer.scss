@@ -1,0 +1,36 @@
+.footer{
+  display: flex;
+  height: 3em;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: darkslategray;
+  width: 100%;
+  box-shadow: 0 -1px 7px #070707;
+  align-items: center;
+  color: #eeeeee;
+  &__item{
+    flex:1;
+
+  }
+  &__item-fl{
+    &:hover{
+      color: cyan;
+      cursor: pointer;
+
+    }
+  }
+
+  &__social-icons{
+    display: flex;
+    flex: 0.7;
+    justify-content: space-around;
+    i{
+      cursor:pointer;
+      &:hover{
+        color: cyan;
+      }
+    }
+  }
+}
+

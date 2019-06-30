@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Loader } from "../../../../../../components/Loader/Loader";
+import { Loader } from "../../../../components/Loader/Loader";
 import { NewsItem } from "../NewsItem/NewsItem";
 import "./NewsList.scss";
 import type {IListProps} from "../../../../../../utils/types";
