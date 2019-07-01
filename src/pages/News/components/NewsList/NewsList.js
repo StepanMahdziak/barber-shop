@@ -16,9 +16,9 @@ export class NewsList extends Component<INewListProps> {
       <ul className="news-list">
         {news.length > 0 ? (
           news.map(item => (
-            <li>
+            <li key={item.id}>
               {" "}
-              <NewsItem title={item.title} img={item.img} desc={item.desc} />
+              <NewsItem title={item.title} img={item.img} desc={item.desc}  id={item.id}/>
             </li>
           ))
         ) : (

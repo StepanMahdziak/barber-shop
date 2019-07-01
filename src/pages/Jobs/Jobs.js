@@ -1,17 +1,213 @@
 import React, {Component} from 'react';
-import {Loader} from "../../components/Loader/Loader"
+import JobsList from "./components/JobsList/JobsList";
+import "./Jobs.scss"
 
-const MockJobs = [{
-    title: "Join to the collective",
-    img:"https://www.londonschoolofbarbering.com/barber-jobs/wp-content/uploads/sites/3/2019/06/IMG_0804-300x200.jpg",
+ export const MockJobs = [
+     {
+     jobRole:"sdh",
+     className:"fuddled",
+     company:"sd",
+     location:"sdf",
+     employment:"dsd",
+     startDate:"dwe",
+     salary:"oip",
+     postedDate:"03932032"
 
-}];
+},
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     }, {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+     {
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },{
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },{
+         jobRole:"sdh",
+         className:"fuddled",
+         company:"sd",
+         location:"sdf",
+         employment:"dsd",
+         startDate:"dwe",
+         salary:"oip",
+         postedDate:"03932032"
+
+     },
+
+];
 
 class Jobs extends Component {
     render() {
         return (
-            <div>
-                <Loader/>
+            <div className="jobs-page">
+                <JobsList jobs={MockJobs}/>
+                {/*<Loader/>*/}
             </div>
         );
     }

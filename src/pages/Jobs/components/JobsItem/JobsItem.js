@@ -1,15 +1,6 @@
 import React, { Component } from "react";
-
- export interface IJobsItemProps  {
-  className: String;
-  company: String;
-  jobRole: String;
-  location: String;
-  employment: String;
-  startDate: Date;
-  salary: String;
-  postedDate: Date;
-}
+import './JobsItem.scss';
+import type {IJobsItemProps} from "../../utils/types";
 
  export class JobsItem extends Component<IJobsItemProps> {
   render() {

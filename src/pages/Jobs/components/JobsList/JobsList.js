@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import type { IJobsItemProps } from "../JobsItem/JobsItem";
 import { Loader } from "../../../../components/Loader/Loader";
 import { JobsItem } from "../JobsItem/JobsItem";
+import "./JobsList.scss"
 
 interface IJobsListProps {
   jobs: [IJobsItemProps];

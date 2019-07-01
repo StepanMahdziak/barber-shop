@@ -4,13 +4,16 @@ import { NewsList } from "./components/NewsList/NewsList";
 import {connect} from 'react-redux';
 import {getNews} from './utils/api'
 
-class News extends Component {
+class News extends Component  {
     componentDidMount(): void {
         !this.props.news && this.props.getNews()
     }
 
     render() {
-      const {news , oneNews, getNews} = this.props;
+      const {news ,
+          oneNews,
+          getNews
+      } = this.props;
     return (
       <div className="news">
         <NewsList news={news} />
@@ -19,8 +22,8 @@ class News extends Component {
   }
 }
 const mapStateToProps = (state) => ({
-    news: state.news,
-        oneNews : state.oneNews
+        news: state.news.news,
+        oneNews : state.news.oneNews
 });
 const mapDispatchToProps = (dispatch) => ({
    getNews : dispatch(getNews())
